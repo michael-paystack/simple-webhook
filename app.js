@@ -15,6 +15,6 @@ app.get("/", (request, response) => {
 });
 
 app.post("/hook", (request, response) => {
-  console.log(request.body);
+  console.log(JSON.stringify(request.body));
   response.json();
 });
